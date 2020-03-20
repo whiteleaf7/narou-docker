@@ -19,14 +19,14 @@ RUN set -x \
  && unzip -q ${AOZORAEPUB3_FILE} \
  && mv ${AOZORAEPUB3_FILE} /aozoraepub3 \
  # install openjdk11
- && apk --no-cache add openjdk11 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
+ && apk --no-cache add openjdk11 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
  # install kindlegen
  && wget http://kindlegen.s3.amazonaws.com/${KINDLEGEN_FILE} \
  && tar -xvzf ${KINDLEGEN_FILE} \
  && mv kindlegen /aozoraepub3 \
  # setting AozoraePub3
  && mkdir .narousetting \
- && narou init -p /aozoraepub3 -l 1.8
+ && narou init -p /aozoraepub3 -l 1.8 \
  && rm -rf /temp
 
 WORKDIR /novel
