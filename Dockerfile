@@ -24,7 +24,7 @@ RUN set -x \
  && wget http://kindlegen.s3.amazonaws.com/${KINDLEGEN_FILE} \
  && tar -xvzf ${KINDLEGEN_FILE} \
  && mv kindlegen /aozoraepub3 \
- # setting AozoraePub3
+ # setting AozoraEpub3
  && mkdir .narousetting \
  && narou init -p /aozoraepub3 -l 1.8 \
  && rm -rf /temp
