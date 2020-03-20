@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  app:
+    build: .
+    image: narou
+    command: ["narou", "web", "-np", "33000"]
+    volumes:
+      - .:/novel:cached
+    tty: true
+    stdin_open: true
+    ports:
+      - "127.0.0.1:33000-33001:33000-33001"
