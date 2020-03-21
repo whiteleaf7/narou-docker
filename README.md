@@ -74,7 +74,7 @@ http://localhost:33000/ にアクセスしてください。
 # イメージを更新する
 
 ```sh
-$ docker pull whiteelaf/narou
+$ docker pull whiteleaf/narou
 ```
 
 更新がある場合、上記コマンドで環境を最新にできます
