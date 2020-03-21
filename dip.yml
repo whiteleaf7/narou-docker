@@ -1,0 +1,6 @@
+version: '4'
+interaction:
+  narou:
+    description: Run narou command
+    service: app
+    command: narou
