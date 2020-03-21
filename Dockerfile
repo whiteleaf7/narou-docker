@@ -37,9 +37,10 @@ RUN set -x \
 
 WORKDIR /novel
 
-COPY init.sh ./
+COPY init.sh /usr/local/bin
+RUN chmod +x /usr/local/bin/init.sh
 
 EXPOSE 33000-33001
 
-ENTRYPOINT ["sh", "init.sh"]
+ENTRYPOINT ["init.sh"]
 CMD ["narou", "web", "-np", "33000"]
