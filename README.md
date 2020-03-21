@@ -1,7 +1,10 @@
 # Narou.rb Docker Image
 
-Narou.rb 作者製の Docker Image です。<br>
-Docker さえあれば環境構築なしで Narou.rb WEB UI を立ち上げることができます。
+Narou.rb を Docker で実行するための Docker Image です。<br>
+Docker さえあれば一切環境構築なしで Narou.rb WEB UI を立ち上げることができます。
+
+Narou.rb 作者製です。<br>
+最新バージョンへの追随は本体とほぼ同時に行う予定です。
 
 イメージ内容は下記で構成されます。
 
@@ -69,7 +72,7 @@ http://localhost:33000/ にアクセスしてください。
 
 ポートを変える場合は docker コマンドと同様に ports の項の前半部分を変更してください。
 
-# ターミナルでコマンドを使いたい場合
+# CUI としてコマンドを使いたい場合
 
 ## docker で直接使う
 
@@ -100,5 +103,9 @@ interaction:
 $ dip narou list
 
 # docker-compose up と同じ
-dip up
+$ dip up
+
+# 下記を実行すると、narou コマンドを透過的に実行出来る様になる
+$ eval "$(dip console)"
+$ narou list
 ```
