@@ -1,5 +1,7 @@
 FROM ruby:2.7.0-alpine
 
+LABEL maintainer "whiteleaf <2nd.leaf@gmail.com>"
+
 ENV NAROU_VERSION 3.5.0.1
 ENV AOZORAEPUB3_VERSION 1.1.0b55Q
 ENV AOZORAEPUB3_FILE AozoraEpub3-${AOZORAEPUB3_VERSION}
