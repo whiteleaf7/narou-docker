@@ -71,6 +71,13 @@ $ docker-compose up
 http://localhost:33000/ にアクセスしてください。
 
 ポートを変える場合は docker コマンドと同様に ports の項の前半部分を変更してください。
+# イメージを更新する
+
+```sh
+$ docker pull whiteelaf/narou
+```
+
+更新がある場合、上記コマンドで環境を最新にできます
 
 # CUI としてコマンドを使いたい場合
 
