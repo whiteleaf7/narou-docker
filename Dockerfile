@@ -24,7 +24,7 @@ RUN set -x \
  && apk --no-cache add openjdk11 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
  # install kindlegen
  && wget http://kindlegen.s3.amazonaws.com/${KINDLEGEN_FILE} \
- && tar -xvzf ${KINDLEGEN_FILE} \
+ && tar -xzf ${KINDLEGEN_FILE} \
  && mv kindlegen /aozoraepub3 \
  # setting AozoraEpub3
  && mkdir .narousetting \
