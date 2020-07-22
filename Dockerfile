@@ -10,6 +10,8 @@ ENV KINDLEGEN_FILE kindlegen_linux_2.6_i386_v2_9.tar.gz
 WORKDIR /temp
 
 RUN set -x \
+ # install tzdata
+ && apk --no-cache add tzdata \
  # install AozoraEpub3
  && wget https://github.com/kyukyunyorituryo/AozoraEpub3/releases/download/${AOZORAEPUB3_VERSION}/${AOZORAEPUB3_FILE}.zip \
  && unzip -q ${AOZORAEPUB3_FILE} \

@@ -52,6 +52,8 @@ version: "3.7"
 services:
   app:
     image: whiteleaf/narou
+    environment:
+      TZ: Asia/Tokyo
     command: ["narou", "web", "-np", "33000"]
     volumes:
       - .:/novel:cached
