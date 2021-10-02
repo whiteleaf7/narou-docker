@@ -3,6 +3,8 @@ version: "3.7"
 services:
   app:
     build: .
+    environment:
+      TZ: Asia/Tokyo
     image: narou
     command: ["narou", "web", "-np", "33000"]
     volumes:
